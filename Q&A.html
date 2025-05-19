@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'ReactJS')">ReactJS</button>
+  <button class="tablinks" onclick="openCity(event, 'JavaScript')">JavaScript</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS')">CSS</button>
+  <button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
+</div>
+
+<div id="ReactJS" class="tabcontent">
+<button type="button" class="collapsible">Hooks in ReactJS</button>
+<div class="content">
+  <p>
+    1. Hooks are nothing but a new features, also called as in-built functions.</br>
+    2. Hooks are introduced in the react v16.8 version.</br>
+    3. Hooks are backward-compatible with old features of reactjs, which means it does not contain any breaking changes.</br>
+    <u>Basic Hooks:</u> useState(), useEffect(), useContext()</br>
+    <u>Advanced Hooks:</u> useRef(), useReducer(), useSelector(), useDispatch(), useMemo(), useCallback(), useID()</br>
+    <u>Hooks for React Routing:</u> useHistory(), useParams(), useLocation(), useRouteMatch()
+  </p>
+</div>
+
+<button type="button" class="collapsible">useEffect()</button>
+<div class="content">
+  <p>
+    - It is used to perform side effects in your components.</br>
+        1. fetching data from 3rd party API's.</br>
+        2. directly updating the DOM.</br>
+        3. clean up operations.</br>
+  </p>
+</div>
+<button type="button" class="collapsible">What is ReactJS?</button>
+<div class="content">
+  <p>
+    - Open source, JS library. </br>
+    - Declarative.</br>
+    - Efficient and flexible JS library for building reusable UI components.</br>
+    - It is open-source, component-based front end library, which is responsible only for the view layer of the application. </br>
+  </p>
+</div>
+<button type="button" class="collapsible">Why React instead other frameworks?</button>
+<div class="content">
+  <p>React is developed & maintained by Meta. It is a JavaScript library used for building beautiful user interfaces. React’s main objective is to simplify the process of building complex UIs by breaking them into smaller, manageable components. It follows a component-based architecture, allowing developers to build reusable UI components.
+    <strong>Key features of React</strong><br>
+    - JSX.<br>
+    - Components.<br>
+    - One-way data binding.<br>
+    - Virtual DOM.<br>
+    - Simplicity.<br>
+    - Performance.<br>
+  </p>
+</div>
+<button type="button" class="collapsible">What is virtual DOM?</button>
+<div class="content">
+  <p>
+    - Virtual DOM is nothing but a logical DOM or JavaScript DOM.<br>
+    - It will works at application level itself, so it will occupy entire memory space in the application.<br>
+    - It will check the previous state with new state in the component tree structure.<br>
+    - If any changes are there, then only It will re-load only updated component state.<br>
+    - So it will consume less memory but it will improves high perform.<br>
+    Virtual DOM uses Diffie algorithm, Diffie algorithm which component changed data details and send the details to Virtual DOM.<br>
+    Virtual DOM Immediately send the changes to Real DOM (Browser DOM).<br>
+    Real DOM (Browser DOM) where changes is happened in state that components only re-rendering remaining componenets did not re-rendering that is virtual DOM benefit.<br>
+  </p>
+</div>
+<button type="button" class="collapsible">Real DOM vs Virtual DOM</button>
+<div class="content">
+  <p>
+   - Real DOM is also called as physical DOM.<br>
+   - It will works at the browser level, every time it will create new memory instance even for small changes in the web application.<br>
+   - It will reload entire webapplication at a time so consumes more memory space and gives poor performance.<br>
+  </p>
+</div>
+<button type="button" class="collapsible">JSX</button>
+<div class="content">
+  <p>
+   - JSX is an Javascript XML or an extension to the JavaScript.<br>
+   - JSX is nothing but a combination of.<br>
+   1. JavaScript.<br>
+   2. CSS.<br>
+   3. XML (Custom Tags).<br>
+   4. HTML.<br>
+  </p>
+</div>
+<button type="button" class="collapsible">Component</button>
+<div class="content">
+  <p>
+   - Component is a piece of code or fundemental building block of a React application.<br>
+   - Every React Application contains at-least one root component and n-number of child componenets<br>
+   - All componenets will form like as tree structure in the browser at the time of running a react application.<br>
+   - Every React component can have their own structure, methods as well as API's, means each component will work independently from one another but all child components merge in a parent component, which will be the final UI of your application.<br>
+   <strong>Advantange of Components</strong><br>
+   - Components will make easy to build UI <br>
+   - If anything goes wrong in UI, It is very easy to findout/debug any issue.<br>
+   - They can reusable as per your need.<br>
+  </p>
+</div>
+<div id="JavaScript" class="tabcontent">
+  <h3>JavaScript</h3>
+</div>
+
+<div id="CSS" class="tabcontent">
+  <h3>CSS</h3>
+</div>
+
+<div id="html" class="tabcontent">
+  <h3>HTML</h3>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
